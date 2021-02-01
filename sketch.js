@@ -66,7 +66,7 @@ function keyPressed(){
 }
 
 async function getbgimg(){
-    var response = await fetch("https://worldtimeapi.org/timezone/America/Los_Angeles");
+    var response = await fetch("https://worldtimeapi.org/api/timezone/America/Los_Angeles");
     var responseJson = await response.json();
     var dateT = responseJson.datetime;
     var HR = dateT.slice(11,13); 
